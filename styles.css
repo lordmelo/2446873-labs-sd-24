@@ -1,0 +1,114 @@
+:root{
+    --color-1: black;
+    --color-2: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100vh;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+nav{
+    width: 100%;
+    height: 8%;
+    background-color: var(--color-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+
+    h1{
+        font-size: 1rem;
+        position: relative;
+        right: 9%;
+        color: var(--color-2);
+        width: 50%;
+        text-align: center;
+    }
+
+    ul{
+        width: 23%;
+        display: flex;
+        justify-content: space-evenly;
+
+        li{
+            color: var(--color-2);
+            list-style-type: none;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+main{
+    width: 100%;
+    height: 92%;
+
+    #about-us{
+        width: 100%;
+        height: 36%;
+        border: 1px solid red;
+
+        h2{
+            margin: auto;
+            margin-top: 1%;
+            font-size: 1em;
+            text-align: center;
+            padding-bottom: 0.5em;
+        }
+        figure{
+            position: relative;
+            margin: auto;
+            bottom: 1%;
+            width: 100%;
+    
+            p{
+                margin: auto;
+                margin-top: 1%;
+                font-size: 0.8em;
+                text-align: center;
+            }
+
+            img{
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+
+    h2{
+        margin: auto;
+        margin-top: 1%;
+        font-size: 1em;
+        text-align: center;
+        padding-bottom: 0.5em;
+        display: block;
+    }
+
+    #our-services{
+        border: 1px solid blue;
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-content: center;
+
+        figure{
+            width: 30%;
+            height: 100%;
+            border: 1px solid black;
+            position: relative;
+            bottom: 5%;
+        }
+    }
+}
